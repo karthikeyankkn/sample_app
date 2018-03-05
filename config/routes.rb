@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   get  '/showall',to: 'users#index'
   get  '/name', to: 'users#name'
   get  '/allusername', to: "users#allusername"
+  get  '/delete/:id',  to: "users#delete"
+  # put 'edit/:id',  to: "users#update"
   resources :users
 end
